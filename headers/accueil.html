@@ -398,26 +398,28 @@
 			const btnScrollLeft = document.querySelector('#btn-entreprises-scroll-left');
 			const btnScrollRight = document.querySelector('#btn-entreprises-scroll-right');			
 			let maxScroll = hScroll.offsetWidth - sCount.offsetWidth;
-			console.log('val --> ', val);
 		
 		
 			currentScrollPosition += (val * scrollAmount);
 			
+			///console.log('item --> ', item.offsetWidth);
+			///console.log('sCount --> ', sCount.offsetWidth);
+			///console.log('hScroll --> ', hScroll.offsetWidth);
+			///console.log('currentScrollPosition --> ', currentScrollPosition);
+			///console.log('maxScroll --> ', maxScroll);
+			
 			
 			if (currentScrollPosition > 0) {
-				currentScrollPosition = 0;
-				///btnScrollLeft.style.opacity = "0";
-				currentScrollPosition = parseInt(maxScroll) + 1;
-			} else {
-				///btnScrollLeft.style.opacity = "1";
+				if (currentScrollPosition < item.offsetWidth) {
+					currentScrollPosition = maxScroll;
+				} else {
+					currentScrollPosition = parseInt(maxScroll) + 1;
+				}
 			}
 			
 			if (currentScrollPosition <= maxScroll) {
-				currentScrollPosition = maxScroll;
-				///btnScrollRight.style.opacity = "0";
 				currentScrollPosition = 0;
 			} else {
-				///btnScrollRight.style.opacity = "1";
 				if ((currentScrollPosition - item.offsetWidth) < maxScroll) currentScrollPosition = maxScroll + 1;
 			}
 			
