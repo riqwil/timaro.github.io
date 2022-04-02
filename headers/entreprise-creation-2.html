@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <!--<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">-->
-    <title>TIMARO v1.1</title>
+    <title>TIMARO v1.3</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/headers/">
 	<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/footers/">
@@ -20,6 +20,8 @@
 	
 	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
 
     <style>
       .bd-placeholder-img {
@@ -144,7 +146,17 @@
 				</li>
 			  </ul>
 			  <li class="nav-item dropdown d-flex">
-				<a href="entreprise-connexion.html" class="nav-link px-2">Connexion</a>
+					  <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<span>Bienvenue BNP Parisbas</span>
+						<i class="fa-solid fa-circle-user fa-lg"></i>
+					  </a>
+				  <ul class="dropdown-menu dropdown-menu-recruteur dropdown-logout" aria-labelledby="navbarDropdown">
+					<li><a class="dropdown-item" href="#"></a></li>
+					<li><a class="dropdown-item" href="#">Editer le profil</a></li>
+					<li><a class="dropdown-item" href="#">Accès à la CVthèque</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="#">Déconnexion</a></li>
+				  </ul>
 			  </li>
 			</div>
 		  </div>
@@ -156,92 +168,27 @@
 	
 <div class="container-fluid">
 
-	 <!--<fieldset>
-  <legend>Personalia:</legend>
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email"><br><br>
-  <label for="birthday">Birthday:</label>
-  <input type="date" id="birthday" name="birthday"><br><br>
-  <input type="submit" value="Submit">
- </fieldset>-->
-  
-  <div class="row line-center">
-	<div class="block1"></div>
-	<div class="block2">
-		<div class="block-email">
-			<br><span class="bold">Connectez-vous : Pas de compte ? Créez-en un en quelques minutes...</span>
+	<div class="row line-center padding-footer">
+		<div class="block1"></div>
+		<div class="block2">
+			<div class="row block-email">
+				<span class="title-text-bold green padding-bottom">Félicitation! La création de votre profil est recruteur est terminée : statut actif et visible auprès des chercheurs d'emploi</span>
+				<div class="row">
+					<div class="d-flex justify-content-center">
+						<a href="entreprise-cvtheque-recherche.html" class="timaro-blue px-2 link-color">Accès à la CVthèque</a>
+						<a href="#" class="timaro-blue px-2 link-color">Accès à votre dashboard</a>
+						<a href="entreprise-publication.html" class="timaro-blue px-2 link-color">Publier une offre</a>
+						<a href="#" class="timaro-blue px-2 link-color">Editer votre profil</a>
+					</div>
+				</div>
+			</div>
 		</div>
+		<div class="block3"></div>
 	</div>
-	<div class="block3"></div>
-  </div>
-  
-  <div class="row line-center padding-bottom padding-footer">	
-	<div class="col-3"></div>
-	<div class="col-6">
-		<div id="block2">
-			<div class="row padding-bottom">
-				<div class="col-1"></div>
-				<div class="col-4">
-					<span class="text-align-left">Email</span>
-				</div>
-				<div class="col-6">
-					<input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="button-addon2">
-				</div>
-				<div class="col-1"></div>
-			</div>
-			<div class="row padding-bottom">
-				<div class="col-1"></div>
-				<div class="col-4">
-					<span class="text-align-left">Raison sociale</span>
-				</div>
-				<div class="col-6">
-					<input type="text" class="form-control" placeholder="Raison sociale" aria-label="Raison sociale" aria-describedby="button-addon2">
-				</div>
-				<div class="col-1"></div>
-			</div>
-			<!--<div class="row padding-bottom">
-				<div class="col-1"></div>
-				<div class="col-4">
-					<span class="text-align-left">Prénom</span>
-				</div>
-				<div class="col-6">
-					<input type="text" class="form-control" placeholder="Prénom" aria-label="Prénom" aria-describedby="button-addon2">
-				</div>
-				<div class="col-1"></div>
-			</div>-->
-			<div class="row padding-bottom">
-				<div class="col-1"></div>
-				<div class="col-4"><span class="text-align-left">Mot de passe</span></div>
-				<div class="col-6">
-					<input type="password" class="form-control" placeholder="Mot de passe" aria-label="Mot de passe" aria-describedby="button-addon2">
-				</div>
-				<div class="col-1"></div>
-			</div>
-			<div class="row padding-bottom">
-				<div class="col-1"></div>
-				<div class="col-4"><span class="text-align-left">Confirmer le mot de passe</span></div>
-				<div class="col-6">
-					<input type="password" class="form-control" placeholder="Confirmer le mot de passe" aria-label="Confirmer le mot de passe" aria-describedby="button-addon2">
-				</div>
-				<div class="col-1"></div>
-			</div>
-			
-			
-			<div class="row padding-top-10 d-flex">
-				<div class="btn-connexion">
-					<button type="button" id="candidat-save" class="btn btn-secondary btn-sm btn-warning margin-right-30" onclick="window.location.href='entreprise-creation-2.html';">Enregistrer</button>
-				</div>
-			</div>
-		</div>
-	</div>	
-	<div class="col-3"></div>
-  </div>
-  
+	
 </div>
+
+
 
 </main>
 
@@ -268,31 +215,7 @@
 
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="sidebars.js"></script>
-	
-	<script>
-		/**document.getElementById('block-email').style.opacity = "1";
-		document.getElementById('block-save-button').style.opacity = "1";
-		document.getElementById('block-rs').style.opacity = "0";
-		
-		function hideBlock1() {
-			document.getElementById('block-email').style.opacity = "0";
-			document.getElementById('block-save-button').style.opacity = "0";
-		}
-		function hideBlock2() {
-			document.getElementById('block-rs').style.opacity = "0";
-		}
-		function showBlock1() {
-			console.log('In block1');
-			hideBlock2();
-			document.getElementById('block-email').style.opacity = "1";
-			document.getElementById('block-save-button').style.opacity = "1";
-		}
-		function showBlock2() {
-			console.log('In block2');
-			hideBlock1();
-			document.getElementById('block-rs').style.opacity = "1";
-		}**/
-	</script>
+	<script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker.min.js"></script>
 
 	
   </body>

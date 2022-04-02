@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <!--<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">-->
-    <title>TIMARO v1.1</title>
+    <title>TIMARO v1.2</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/headers/">
 	<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/footers/">
@@ -91,10 +91,29 @@
   </symbol>
 </svg>
 
-<header>
+<!--<header class="p-1">
 	<div class="header-block">
-		<!--<img src="../images/logo.jpg" class="logo-timaro" alt="..." />-->
-		<img src="../images/logo.jpg" class="logo-timaro" alt="Logo" width="200" height="200">
+		<div class="logo-block">
+			<div class="story-entreprise-circle logo_timaro">
+				<img src="../images/logo.jpg" class="" alt="..." />
+			</div>
+			<marquee><div class="category-scroll">
+				<span>Banque</span>
+				<span>Assurance</span>
+				<span>Energie</span>
+				<span>Automobile</span>
+				<span>Ecommerce</span>
+				<span>ESN</span>
+				<span>Télécoms</span>
+			<div></marquee>
+		</div>
+	</div>
+</header>-->
+
+
+<header class="p-1">
+	<div class="header-block">
+		<img src="../images/logo.jpg" class="logo-timaro" alt="..." />
 	</div>
 	<marquee class="category-scroll" Scrollamount=15>
 		<span class="margin-right-20">Banque</span>
@@ -109,7 +128,73 @@
 		<span class="margin-right-20">Agro-alimentaire</span>
 		<span class="margin-right-20">Cosmétique</span>
 	</marquee>
-	<div class="row">
+	<div class="header-footer-container row">
+		<nav class="navbar navbar-expand-lg navbar-light">
+		  <div class="container-fluid">
+		    <div class="d-flex">
+				<i class="fa-solid fa-house-chimney fa-2x"></i>
+				<a class="navbar-brand" href="accueil.html">Accueil</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<!--<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+				</li>-->
+				<li class="nav-item">
+				  <div class="d-flex">
+					<i class="fas fa-question fa-2x"></i>
+					<a class="nav-link active" aria-current="page" href="#">Qui sommes nous</a>
+				  </div>
+				</li>
+				<li class="nav-item dropdown d-flex">
+				  <!--<div class="d-flex">-->
+					  <i class="fa-solid fa-user fa-2x"></i>
+					  <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Espace Candidat 
+					  </a>
+				  <!--</div>-->
+				  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<li><a class="dropdown-item" href="#"></a></li>
+					<li><a class="dropdown-item" href="#">Editer le profil</a></li>
+					<li><a class="dropdown-item" href="#">Editer le CV</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="#">Créer la fiche candidat</a></li>
+				  </ul>
+				</li>
+				<li class="nav-item dropdown d-flex">
+				  <i class="fa-solid fa-building fa-2x"></i>
+				  <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Espace Entreprise
+				  </a>
+				  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<li><a class="dropdown-item" href="#">Rechercher des CVs</a></li>
+					<li><a class="dropdown-item" href="#">Publier des annonces</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="#">Créer la fiche entreprise</a></li>
+				  </ul>
+				</li>
+				<!--<li class="nav-item">
+				  <a class="nav-link disabled">Disabled</a>
+				</li>-->
+			  </ul>
+			  <a href="entreprise-connexion.html" class="nav-link link-blue timaro-recruteur-workspace">Accès recruteur TIMARO workspace</a>
+			</div>
+		  </div>
+		</nav>
+	</div>
+</header>
+
+
+<main>
+	
+<div class="container-fluid">
+  
+  <div class="main-block">
+	  
+	  <!--<div class="row headbar">
 		<nav class="navbar navbar-expand-lg navbar-light">
 		  <div class="container-fluid">
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -119,7 +204,7 @@
 			  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item">
 				  <div class="d-flex">
-					<a class="nav-link px-2" aria-current="page" href="accueil.html">Accueil</a>
+					<a class="nav-link px-2" aria-current="page" href="#">Accueil</a>
 				  </div>
 				</li>
 				<li class="nav-item">
@@ -143,109 +228,93 @@
 				  </div>
 				</li>
 			  </ul>
-			  <li class="nav-item dropdown d-flex">
-				<a href="entreprise-connexion.html" class="nav-link px-2">Connexion</a>
-			  </li>
+			  <a href="candidat-creation-1.html" class="nav-link">Inscription</a>
+			  <a href="candidat-connexion.html" class="nav-link">Connexion</a>
 			</div>
 		  </div>
 		</nav>
-	</div>
-</header>
-
-<main class="bg-recruteur">
-	
-<div class="container-fluid">
-
-	 <!--<fieldset>
-  <legend>Personalia:</legend>
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email"><br><br>
-  <label for="birthday">Birthday:</label>
-  <input type="date" id="birthday" name="birthday"><br><br>
-  <input type="submit" value="Submit">
- </fieldset>-->
-  
-  <div class="row line-center">
-	<div class="block1"></div>
-	<div class="block2">
-		<div class="block-email">
-			<br><span class="bold">Connectez-vous : Pas de compte ? Créez-en un en quelques minutes...</span>
-		</div>
-	</div>
-	<div class="block3"></div>
-  </div>
-  
-  <div class="row line-center padding-bottom padding-footer">	
-	<div class="col-3"></div>
-	<div class="col-6">
-		<div id="block2">
-			<div class="row padding-bottom">
-				<div class="col-1"></div>
-				<div class="col-4">
-					<span class="text-align-left">Email</span>
-				</div>
-				<div class="col-6">
-					<input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="button-addon2">
-				</div>
-				<div class="col-1"></div>
-			</div>
-			<div class="row padding-bottom">
-				<div class="col-1"></div>
-				<div class="col-4">
-					<span class="text-align-left">Raison sociale</span>
-				</div>
-				<div class="col-6">
-					<input type="text" class="form-control" placeholder="Raison sociale" aria-label="Raison sociale" aria-describedby="button-addon2">
-				</div>
-				<div class="col-1"></div>
-			</div>
-			<!--<div class="row padding-bottom">
-				<div class="col-1"></div>
-				<div class="col-4">
-					<span class="text-align-left">Prénom</span>
-				</div>
-				<div class="col-6">
-					<input type="text" class="form-control" placeholder="Prénom" aria-label="Prénom" aria-describedby="button-addon2">
-				</div>
-				<div class="col-1"></div>
-			</div>-->
-			<div class="row padding-bottom">
-				<div class="col-1"></div>
-				<div class="col-4"><span class="text-align-left">Mot de passe</span></div>
-				<div class="col-6">
-					<input type="password" class="form-control" placeholder="Mot de passe" aria-label="Mot de passe" aria-describedby="button-addon2">
-				</div>
-				<div class="col-1"></div>
-			</div>
-			<div class="row padding-bottom">
-				<div class="col-1"></div>
-				<div class="col-4"><span class="text-align-left">Confirmer le mot de passe</span></div>
-				<div class="col-6">
-					<input type="password" class="form-control" placeholder="Confirmer le mot de passe" aria-label="Confirmer le mot de passe" aria-describedby="button-addon2">
-				</div>
-				<div class="col-1"></div>
-			</div>
-			
-			
-			<div class="row padding-top-10 d-flex">
-				<div class="btn-connexion">
-					<button type="button" id="candidat-save" class="btn btn-secondary btn-sm btn-warning margin-right-30" onclick="window.location.href='entreprise-creation-2.html';">Enregistrer</button>
-				</div>
+	  </div>-->
+	  
+	  <div class="row line-center">
+		<div class="block1"></div>
+		<div class="block2">
+			<div class="block-email">
+				<br><span class="bold">Connectez-vous : Pas de compte ? Créez-en un en quelques minutes...</span>
 			</div>
 		</div>
-	</div>	
-	<div class="col-3"></div>
-  </div>
+		<div class="block3"></div>
+	  </div>
+	  
+	  <div class="row line-center padding-bottom padding-footer">	
+		<div class="col-3"></div>
+		<div class="col-6">
+			<div id="block2">
+				<div class="row padding-bottom">
+					<div class="col-1"></div>
+					<div class="col-4">
+						<span class="text-align-left">Email</span>
+					</div>
+					<div class="col-6">
+						<input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="button-addon2">
+					</div>
+					<div class="col-1"></div>
+				</div>
+				<div class="row padding-bottom">
+					<div class="col-1"></div>
+					<div class="col-4">
+						<span class="text-align-left">Raison sociale</span>
+					</div>
+					<div class="col-6">
+						<input type="text" class="form-control" placeholder="Raison sociale" aria-label="Raison sociale" aria-describedby="button-addon2">
+					</div>
+					<div class="col-1"></div>
+				</div>
+				<!--<div class="row padding-bottom">
+					<div class="col-1"></div>
+					<div class="col-4">
+						<span class="text-align-left">Prénom</span>
+					</div>
+					<div class="col-6">
+						<input type="text" class="form-control" placeholder="Prénom" aria-label="Prénom" aria-describedby="button-addon2">
+					</div>
+					<div class="col-1"></div>
+				</div>-->
+				<div class="row padding-bottom">
+					<div class="col-1"></div>
+					<div class="col-4"><span class="text-align-left">Mot de passe</span></div>
+					<div class="col-6">
+						<input type="password" class="form-control" placeholder="Mot de passe" aria-label="Mot de passe" aria-describedby="button-addon2">
+					</div>
+					<div class="col-1"></div>
+				</div>
+				<div class="row padding-bottom">
+					<div class="col-1"></div>
+					<div class="col-4"><span class="text-align-left">Confirmer le mot de passe</span></div>
+					<div class="col-6">
+						<input type="password" class="form-control" placeholder="Confirmer le mot de passe" aria-label="Confirmer le mot de passe" aria-describedby="button-addon2">
+					</div>
+					<div class="col-1"></div>
+				</div>
+				
+				
+				<div class="row padding-top-10 d-flex">
+					<div class="btn-connexion">
+						<button type="button" id="candidat-save" class="btn btn-secondary btn-sm btn-warning margin-right-30" onclick="window.location.href='candidat-creation-2.html';">Enregistrer</button>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="col-3"></div>
+	  </div>
+	  
+	</div>
   
 </div>
 
 </main>
 
 <footer>
+	
 	<div class="d-flex">
 		<div class="col-6">
 			<ul class="nav justify-content-start list-unstyled d-flex padding-top-25">
@@ -264,6 +333,38 @@
 			 </ul>
 		</div> 
 	</div>
+	
+	<!--<div class="footer d-flex">
+		<div class="col-6">
+			<ul class="nav justify-content-start list-unstyled d-flex padding-top-25">
+			   <a href="/" class="mb-3 me-2 mb-md-0 text-white text-decoration-none lh-1">
+			   </a>
+			   <span class="">&copy; 2022 TIMARO</span>
+			 </ul>
+		</div>
+		
+		<div class="col-6">
+			 <ul class="nav justify-content-end list-unstyled d-flex padding-top-25 padding-right-5">
+			   <li class="ms-3"><a class="text-black" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#linkedin"/></svg></a></li>
+			   <li class="ms-3"><a class="text-black" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+			   <li class="ms-3"><a class="text-black" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+			   <li class="ms-3"><a class="text-black" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+			 </ul>
+		</div> 
+	</div>-->
+	<!--<div class="footer align-items-center justify-content-between py-3 my-4 d-flex flex-wrap  border-top bg-org">
+		 <div class="col-md-4 d-flex align-items-center">
+		   <a href="/" class="mb-3 me-2 mb-md-0 text-white text-decoration-none lh-1">
+		   </a>
+		   <span class="text-white">&copy; 2022 TIMARO EMPLOI</span>
+		 </div>
+
+		 <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+		   <li class="ms-3"><a class="text-white" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+		   <li class="ms-3"><a class="text-white" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+		   <li class="ms-3"><a class="text-white" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+		 </ul>
+	</div>-->
 </footer>
 
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
