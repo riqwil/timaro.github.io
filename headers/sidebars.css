@@ -376,6 +376,10 @@ table {
 	padding-right: 5px;
 }
 
+.padding-right-10 {
+	padding-right: 10px;
+}
+
 .padding-right-25 {
 	padding-right: 25px;
 }
@@ -1738,6 +1742,8 @@ div.desc {
 
 .border-radius-10 {
 	border-radius: 10px;
+	border: 1px solid #29a329;
+	
 }
 
 .btn-warning {
@@ -1758,6 +1764,35 @@ div.desc {
 .btn-warning:focus {
     color: #000;
     background-color: #29a329;
+}
+
+a {
+	color: black;
+}
+
+a:link {
+  /**color: green; **/
+  background-color: transparent; 
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  /**color: pink;**/
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  /**color: red;**/
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  /**color: yellow;**/
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 
