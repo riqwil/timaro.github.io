@@ -1711,7 +1711,7 @@ div.desc {
 
 .bg-color-timaro-inscription {
 	background-color: #ffd480;
-	border-radius: 5px;
+	border-radius: 10px;
 }
 
 .bg-color-timaro-connexion {
@@ -1766,35 +1766,35 @@ div.desc {
     background-color: #29a329;
 }
 
-a {
+
+a.submenu-link {
 	color: black;
 }
 
-a:link {
+a.submenu-link:link {
   /**color: green; **/
   background-color: transparent; 
   text-decoration: none;
   color: black;
 }
 
-a:visited {
+a.submenu-link:visited {
   /**color: pink;**/
   background-color: transparent;
   text-decoration: none;
 }
 
-a:hover {
+a.submenu-link:hover {
   /**color: red;**/
   background-color: transparent;
   text-decoration: underline;
 }
 
-a:active {
+a.submenu-link:active {
   /**color: yellow;**/
   background-color: transparent;
   text-decoration: underline;
 }
-
 
 
 
