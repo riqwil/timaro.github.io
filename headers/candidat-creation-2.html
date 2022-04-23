@@ -6,12 +6,12 @@
     <meta name="description" content="">
     <!--<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">-->
-    <title>TIMARO v1.1</title>
+    <title>TIMARO v1.8</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/headers/">
 	<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/footers/">
 	<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sidebars/">
-	<link rel="icon" href="../images/logo_timaro.png">
+	<link rel="icon" href="../images/customcolor_icon_transparent_background.png">
 
     
 
@@ -94,26 +94,47 @@
 </svg>
 
 <header>
-	<div class="header-block">
-		<!--<img src="../images/logo.jpg" class="logo-timaro" alt="..." />-->
-		<img src="../images/logo.jpg" class="logo-timaro" alt="Logo" width="200" height="200">
+	<div class="d-flex">
+		<div class="flex-basis-20"><img src="../images/customcolor_textlogo_customcolor_background.png" class="timaro-logo-text" alt="Logo" width="155" height="55"></div>
+		<div class="flex-basis-10"></div>
+		<div class="flex-basis-40 flex-center">
+			<img src="../images/customcolor_icon_transparent_background.png" class="timaro-logo" alt="Logo" width="100" height="50">
+		</div>
+		<div class="flex-basis-10"></div>
+		<div class="flex-basis-20"></div>
+		<marquee class="category-scroll" Scrollamount=15>
+			<span class="margin-right-50">Banque</span>
+			<i class="fa-solid fa-angle-right margin-right-50"></i>
+			<span class="margin-right-50 margin-right-50">Assurance</span>
+			<i class="fa-solid fa-angle-right margin-right-50"></i>
+			<span class="margin-right-50">Energie</span>
+			<i class="fa-solid fa-angle-right margin-right-50"></i>
+			<span class="margin-right-50">Automobile</span>
+			<i class="fa-solid fa-angle-right margin-right-50"></i>
+			<span class="margin-right-50">Ecommerce</span>
+			<i class="fa-solid fa-angle-right margin-right-50"></i>
+			<span class="margin-right-50">ESN</span>
+			<i class="fa-solid fa-angle-right margin-right-50"></i>
+			<span class="margin-right-50">Télécoms</span>
+			<i class="fa-solid fa-angle-right margin-right-50"></i>
+			<span class="margin-right-50">Luxe</span>
+			<i class="fa-solid fa-angle-right margin-right-50"></i>
+			<span class="margin-right-50">Secteur hôtelier</span>
+			<i class="fa-solid fa-angle-right margin-right-50"></i>
+			<span class="margin-right-50">Agro-alimentaire</span>
+			<i class="fa-solid fa-angle-right margin-right-50"></i>
+			<span class="margin-right-50">Cosmétique</span>
+		</marquee>
 	</div>
-	<marquee class="category-scroll" Scrollamount=15>
-		<span class="margin-right-20">Banque</span>
-		<span class="margin-right-20">Assurance</span>
-		<span class="margin-right-20">Energie</span>
-		<span class="margin-right-20">Automobile</span>
-		<span class="margin-right-20">Ecommerce</span>
-		<span class="margin-right-20">ESN</span>
-		<span class="margin-right-20">Télécoms</span>
-		<span class="margin-right-20">Luxe</span>
-		<span class="margin-right-20">Secteur hôtelier</span>
-		<span class="margin-right-20">Agro-alimentaire</span>
-		<span class="margin-right-20">Cosmétique</span>
-	</marquee>
-	<div class="row">
+</header>
+
+<main>
+	
+<div class="container-fluid">
+	
+	<div class="row height-50 padding-bottom-30">
 		<nav class="navbar navbar-expand-lg navbar-light">
-		  <div class="container-fluid">
+		  <div class="container-fluid padding-top-5">
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>
@@ -121,7 +142,7 @@
 			  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item">
 				  <div class="d-flex">
-					<a class="nav-link px-2" aria-current="page" href="accueil.html">Accueil</a>
+					<a class="nav-link px-2" aria-current="page" href="#">Accueil</a>
 				  </div>
 				</li>
 				<li class="nav-item">
@@ -131,34 +152,55 @@
 				</li>
 				<li class="nav-item">
 				  <div class="d-flex">
-					<a class="nav-link px-2" aria-current="page" href="#">Accès à la CVthèque</a>
+					<a class="nav-link px-2" aria-current="page" href="#">Comment je prépare ma recherche</a>
 				  </div>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Mon CV
+				  </a>
+				  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<li><a class="dropdown-item" href="#">Créer mon CV sur mesure</a></li>
+					<li><a class="dropdown-item" href="#">Modifier mon CV</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="#">Télécharger un CV depuis mon PC</a></li>
+				  </ul>
 				</li>
 				<li class="nav-item">
 				  <div class="d-flex">
-					<a class="nav-link px-2" aria-current="page" href="#">Editer le profil de l'entreprise</a>
-				  </div>
-				</li>
-				<li class="nav-item">
-				  <div class="d-flex">
-					<a class="nav-link px-2" aria-current="page" href="#">Conseil en RH</a>
+					<a class="nav-link px-2" aria-current="page" href="#">Alertes Emploi</a>
 				  </div>
 				</li>
 			  </ul>
-			  <li class="nav-item dropdown d-flex">
-				<a href="candidat-connexion.html" class="nav-link px-2">Connexion</a>
-				<a href="entreprise-connexion.html" class="nav-link px-2 link-blue">Accès Recruteur</a>
+			  <!--<li class="nav-item dropdown d-flex">
+				  <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+					<img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+					<strong>mdo</strong>
+				  </a>
+				  <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2" style="">
+					<li><a class="dropdown-item" href="#">Editer mon profil</a></li>
+					<li><a class="dropdown-item" href="#">Editer mon CV</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="#">Déconnexion</a></li>
+				  </ul>
+				</li>-->
+			  <li class="nav-item dropdown d-flex margin-right-10">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					<img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+					Timaro
+				  </a>
+				  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<li><a class="dropdown-item" href="#">Editer mon profil</a></li>
+					<li><a class="dropdown-item" href="#">Editer mon CV</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="#">Déconnexion</a></li>
+				  </ul>
 			  </li>
 			</div>
 		  </div>
 		</nav>
 	</div>
-</header>
-
-<main>
 	
-<div class="container-fluid">
-
 	<div class="row line-center">
 		<div class="block1"></div>
 		<div class="block2">
@@ -1233,13 +1275,11 @@
 	</div>
 	
 	<div class="row line-center padding-bottom padding-footer">
-		<div class="block1"></div>
-		<div class="block2">
-			<div class="row block-email">
-				<button type="button" id="fsearch" class="btn btn-secondary btn-sm btn-warning" onclick="window.location.href='candidat-creation-3.html';">Enregistrer votre CV</button>
-			</div>
+		<div class="col-5"></div>
+		<div class="col-2 flex-align-center">
+			<button type="button" id="fsearch" class="btn btn-secondary btn-sm" onclick="window.location.href='candidat-creation-3.html';">Enregistrer votre CV</button>
 		</div>
-		<div class="block3"></div>
+		<div class="col-5"></div>
 	</div>
 	
 </div>
